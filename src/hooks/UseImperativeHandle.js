@@ -1,7 +1,6 @@
-import './App.css';
 import {forwardRef, useImperativeHandle, useRef} from "react";
 
-function App() {
+function UseImperativeHandle() {
   const customInputRef = useRef();
   const handleFocus = () => {
     customInputRef.current.focus();
@@ -49,4 +48,4 @@ const CustomInput = forwardRef((props, ref) => {
   )
 })
 
-export default App;
+export default UseImperativeHandle;
